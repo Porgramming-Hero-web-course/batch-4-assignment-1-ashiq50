@@ -8,7 +8,7 @@ function validateKeys<T extends object>(obj: T, keys: (keyof T)[]): boolean {
    }
    
    // Sample Input:
-   const person2 = { name: "Alice", age: 25, email: "alice@example.com" };
-   console.log(validateKeys(person2, ["name", "age"]));  // Output: true
-   console.log(validateKeys(person2, ["name", "phone" as keyof typeof person])); // Output: false
+   const person1 = { name: "Alice", age: 25, email: "alice@example.com" };
+   console.log(validateKeys(person1, ["name", "age"]));  // Output: true
+   console.log(validateKeys(person1, ["name", "phone" as keyof typeof person])); // Output: false
    

@@ -2,11 +2,11 @@ The significance of union and intersection types in Typescript.
 
 blog:
 
-Union Types: 
+Union Type: 
 
  A union type allows a variable to hold one of several possible types. Think of it as "either-or." For example, number | string means a value can be either a number or a string. This flexibility is invaluable for handling scenarios where inputs might vary, such as optional function parameters or user inputs that can be in different formats.
 
-example of union types:
+example of union type:
 
 function printId(id: number | string) {
   if (typeof id === "string") {
